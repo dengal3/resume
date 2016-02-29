@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+i {
+  margin-right: 0.5em;
+}
+body,
+html {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Sans GB", Helvetica, Monospace, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: auto;
+  width: 920px;
+  height: 1300px;
+}
+.left {
+  height: 100%;
+  width: 33.3%;
+  float: left;
+  background-color: #373737;
+  color: #efefef;
+}
+.right {
+  width: 100%;
+  height: 100%;
+  float: right;
+  padding-left: 33.3%;
+  margin-left: -33.3%;
+  background-color: #efefef;
+  color: #373737;
+}
+.avatar {
+  text-align: center;
+  padding: 2em;
+  background-color: #1a5968;
+}
+.avatar .photo {
+  margin: auto;
+  width: 8em;
+  height: 8em;
+  border: 1px solid #efefef;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.avatar .name {
+  font-size: 1.5em;
+  height: 2em;
+  line-height: 2em;
+}
+.avatar .occupation {
+  font-size: 0.8em;
+  height: 1em;
+  line-height: 1em;
+}
+.information {
+  padding: 2em 2em 2em 2em;
+}
+.information .info-section {
+  overflow: hidden;
+  margin-bottom: 4em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.information .info-section .title {
+  font-weight: bold;
+  line-height: 2.5em;
+  height: 2.5em;
+}
+.information .info-section.education .school {
+  float: left;
+}
+.information .info-section.education .period {
+  float: right;
+}
+.main-section {
+  position: relative;
+  min-height: 300px;
+  padding: 4em 4em 0 8em;
+}
+.main-section > .title {
+  width: 8em;
+  height: 2.5em;
+  line-height: 2.5em;
+  position: absolute;
+  left: -2.5em;
+  top: 100px;
+  font-weight: blod;
+  text-align: center;
+}
+.main-section:nth-child(3n+1) > .title {
+  background-color: #fcc04f;
+}
+.main-section:nth-child(3n+1) > .title:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: small;
+  border: 2em solid transparent;
+  border-bottom: 2em solid #e19404;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 1.1111111111111112em;
+  left: 1em;
+}
+.main-section:nth-child(3n+2) > .title {
+  background-color: #87a87c;
+}
+.main-section:nth-child(3n+2) > .title:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: small;
+  border: 2em solid transparent;
+  border-bottom: 2em solid #55724c;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 1.1111111111111112em;
+  left: 1em;
+}
+.main-section:nth-child(3n+0) > .title {
+  background-color: #6e95b1;
+}
+.main-section:nth-child(3n+0) > .title:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: small;
+  border: 2em solid transparent;
+  border-bottom: 2em solid #416178;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 1.1111111111111112em;
+  left: 1em;
+}
+.experience {
+  margin-bottom: 2.5em;
+}
+.experience .head {
+  padding-bottom: 0.6em;
+}
+.experience .head .workplace {
+  font-size: 1.1em;
+}
+.experience .head .intro {
+  overflow: hidden;
+  font-size: 0.9em;
+}
+.experience .head .intro .position {
+  display: block;
+  float: left;
+}
+.experience .head .intro .time {
+  float: right;
+}
+.experience .details {
+  font-size: 0.9em;
+  display: block;
+  color: #6a6a6a;
+}
+.skill {
+  line-height: 1.2em;
+  margin: 0.6em 0 0.6em 0;
+}

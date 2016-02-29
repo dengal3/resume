@@ -1,0 +1,50 @@
+mixin info-section(title)
+    .info-section(class!=attributes.class)
+        h4.title
+            | #{title}
+        if block
+            .details
+                block
+
+mixin icon(name)
+    i.fa(class="fa-#{name}")
+
+mixin skill-li(skill)
+    li
+        +icon("wrench")
+        | #{skill}
+mixin award-li(award)
+    li
+        +icon("star")
+        | #{award} 
+
+mixin main-section(title)
+    article.main-section(class!=attributes.class)
+        h4.title
+            | #{title}
+        if block
+            block
+
+mixin experience-section(experience)
+    .experience
+        .head
+            .workplace
+                | #{experience.workplace}
+            if experience.position || experience.startTime
+                .intro
+                    .position
+                        | #{experience.position}
+                    .time
+                        | #{experience.startTime} - #{experience.endTime}
+        .details
+            | #{experience.details}
+
+mixin skill-section(skill)
+    .skill
+        +icon("cog")
+        | #{skill}
+
+mixin contact-section(contact)
+    div(class="#{contact.method}")
+        +icon(contact.icon)
+        | #{contact.content}

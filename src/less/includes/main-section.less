@@ -1,0 +1,32 @@
+@import "../utils.less";
+.main-section {
+    position: relative;
+    min-height: 300px;
+    padding: 4em 3em 0 8em;
+    & > .title {
+        width: 8em;
+        height: 2.5em;
+        line-height: 2.5em;
+        position: absolute;
+        left: -2.5em;
+        top: 100px;
+        font-weight: blod;
+        text-align: center;
+    }
+
+
+    &:nth-child(3n+1) > .title {
+        background-color: @title-yellow;
+        .triangle(2em, darken(@title-yellow, 20%));
+    }
+
+    &:nth-child(3n+2) > .title {
+        background-color: @title-green;
+        .triangle(2em, darken(@title-green, 20%));
+    }
+
+    &:nth-child(3n+0) > .title {
+        background-color: @title-blue;
+        .triangle(2em, darken(@title-blue, 20%));
+    }
+}
