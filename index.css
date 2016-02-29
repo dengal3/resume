@@ -29,7 +29,7 @@ html {
   width: 33.3%;
   float: left;
   background-color: #373737;
-  color: #efefef;
+  color: #EFEFEF;
 }
 .right {
   width: 100%;
@@ -37,20 +37,20 @@ html {
   float: right;
   padding-left: 33.3%;
   margin-left: -33.3%;
-  background-color: #efefef;
+  background-color: #EFEFEF;
   color: #373737;
 }
 .avatar {
   text-align: center;
   padding: 2em;
-  background-color: #1a5968;
+  background-color: #1A5968;
 }
-.avatar .photo {
+.avatar .photo img {
   margin: auto;
   width: 8em;
   height: 8em;
-  border: 1px solid #efefef;
-  border-radius: 50%;
+  border: 1px solid #EFEFEF;
+  border-radius: 10%;
   margin-bottom: 1em;
 }
 .avatar .name {
@@ -86,7 +86,7 @@ html {
 .main-section {
   position: relative;
   min-height: 300px;
-  padding: 4em 4em 0 8em;
+  padding: 4em 3em 0 8em;
 }
 .main-section > .title {
   width: 8em;
@@ -99,7 +99,7 @@ html {
   text-align: center;
 }
 .main-section:nth-child(3n+1) > .title {
-  background-color: #fcc04f;
+  background-color: #FCC04F;
 }
 .main-section:nth-child(3n+1) > .title:after {
   content: "";
@@ -111,11 +111,11 @@ html {
   border-bottom: 2em solid #e19404;
   position: absolute;
   transform: rotate(45deg);
-  top: 1.1111111111111112em;
+  top: 1.11111111em;
   left: 1em;
 }
 .main-section:nth-child(3n+2) > .title {
-  background-color: #87a87c;
+  background-color: #87A87C;
 }
 .main-section:nth-child(3n+2) > .title:after {
   content: "";
@@ -127,11 +127,11 @@ html {
   border-bottom: 2em solid #55724c;
   position: absolute;
   transform: rotate(45deg);
-  top: 1.1111111111111112em;
+  top: 1.11111111em;
   left: 1em;
 }
 .main-section:nth-child(3n+0) > .title {
-  background-color: #6e95b1;
+  background-color: #6E95B1;
 }
 .main-section:nth-child(3n+0) > .title:after {
   content: "";
@@ -143,7 +143,7 @@ html {
   border-bottom: 2em solid #416178;
   position: absolute;
   transform: rotate(45deg);
-  top: 1.1111111111111112em;
+  top: 1.11111111em;
   left: 1em;
 }
 .experience {
@@ -171,7 +171,12 @@ html {
   display: block;
   color: #6a6a6a;
 }
+.experience:last-child {
+  margin-bottom: 1.2em;
+}
 .skill {
   line-height: 1.2em;
   margin: 0.6em 0 0.6em 0;
+  font-size: 0.9em;
+  color: #6a6a6a;
 }
